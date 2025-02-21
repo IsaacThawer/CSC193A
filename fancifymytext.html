@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Fancify My Text</title>
+</head>
+<body>
+  <h1>Fancify My Text</h1>
+  
+  <!-- Text Box -->
+    <legend>Text</legend>
+    <textarea id="textArea" rows="4" cols="30"></textarea>
+  <br>
+  
+  <!-- Fancify -->
+  
+    <legend>Fancify</legend>
+    <!-- Button to trigger alert and enlarge text -->
+    <button id="biggerButton" onclick="bigger()">Bigger!</button>
+	<!-- br is used for space padding-->
+    <br>
+	<br>
+    <!-- Radio buttons to apply fancy style or revert -->
+    <input type="radio" id="fancyRadio" name="styleOption" value="fancy" onchange="applyStyle()">
+    <label for="fancyRadio">FancyShmancy</label>
+    <br>
+    <input type="radio" id="boringRadio" name="styleOption" value="boring" onchange="applyStyle()">
+    <label for="boringRadio">BoringBetty</label>
+    <br> 
+	<br>
+    <!-- Moo button to add "-Moo" -->
+    <button id="mooButton" onclick="moo()">Moo</button>
+
+  
+  <!-- Link to the JavaScript file -->
+  <script src="fancifymytext.js"></script>
+</body>
+</html>
